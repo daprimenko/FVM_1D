@@ -11,7 +11,7 @@ def init():
     length_int = struct.calcsize('i')
 
     # Открываем информационный файл
-    with open('partition_info.dat', 'rb') as file:
+    with open('number_of_points.dat', 'rb') as file:
         inf_dat = file.read(length_int)
         NPoints = struct.unpack('i', inf_dat)[0]
 
